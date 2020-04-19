@@ -1,0 +1,134 @@
+.left_w,.right_wid{
+  width: 50%;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("covid.jpg")!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  /*position: relative!important;*/
+}
+
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+.position{
+  
+
+  height:180px;
+  top:9%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  
+  
+}
+div.card {
+
+  box-shadow: 0 4px 8px 0 rgba(1, 0, 0.9, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+ 
+.positon{
+    border-top: 3px yellow;
+ 
+}
+.parallax {
+  /* The image used 
+  background-image: url("image/slide1.jpg");
+
+  /* Set a specific height */
+ 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 748px) {
+  body {
+    background-color:lightblue!important;
+
+  }
+  .margino{
+    margin-top: 0rem!important;
+    margin: 0 auto 0 auto!important;
+  }
+  .carousel,.slide{
+    height: 260px!important;
+  }
+.carousel-inner{
+  height: 260px!important;
+}
+.carousel-control-next{
+   height: 120px!important;
+   display: none!important;
+}
+.carousel-control-prev{
+   height: 120px!important;
+   position: absolute!important;
+   display: none!important;
+  
+}
+.card{
+  background-color: white;
+}
+.cot{
+  font-size: 20px;
+}
+.cone{
+  display: flex;
+  flex-direction:row-reverse;
+}
+}
+/* Style the input container */
+.input-container {
+  display: flex !important;
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px !important;
+  background: dodgerblue !important;
+  color: white !important;
+  min-width: 50px !important;
+  text-align: center !important;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100% !important;
+  padding: 10px !important;
+  outline: none !important;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue !important;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue!important;
+  color: white;
+  padding: 15px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  opacity: 0.9 !important;
+}
+
+.btn:hover {
+  opacity: 1;
+}
