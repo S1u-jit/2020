@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--   <link rel="stylesheet" type="text/css" href="css/Style.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
   <script src="jquery-3.4.1.min.js"></script>
   <link href="css/floating-totop-button.css" rel="stylesheet" />
 
@@ -9,6 +18,141 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/Style.css">
   <style>
+    .left_w,.right_wid{
+  width: 50%;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("covid.jpg")!important;
+  height: 200px!important;
+  background-position: center!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  /*position: relative!important;*/
+}
+
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+.position{
+  position: absolute;
+
+  height:180px;
+  top:9%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  
+  
+}
+div.card {
+
+  box-shadow: 0 4px 8px 0 rgba(1, 0, 0.9, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+ 
+.positon{
+    border-top: 3px yellow;
+ 
+}
+.parallax {
+  /* The image used 
+  background-image: url("image/slide1.jpg");
+
+  /* Set a specific height */
+ 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 748px) {
+  body {
+    background-color:lightblue!important;
+
+  }
+  .margino{
+    margin-top: 0rem!important;
+    margin: 0 auto 0 auto!important;
+  }
+  .carousel,.slide{
+    height: 260px!important;
+  }
+.carousel-inner{
+  height: 260px!important;
+}
+.carousel-control-next{
+   height: 120px!important;
+   display: none!important;
+}
+.carousel-control-prev{
+   height: 120px!important;
+   position: absolute!important;
+   display: none!important;
+  
+}
+.card{
+  background-color: white;
+}
+.cot{
+  font-size: 20px;
+}
+.cone{
+  display: flex;
+  flex-direction:row-reverse;
+}
+}
+/* Style the input container */
+.input-container {
+  display: flex !important;
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px !important;
+  background: dodgerblue !important;
+  color: white !important;
+  min-width: 50px !important;
+  text-align: center !important;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100% !important;
+  padding: 10px !important;
+  outline: none !important;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue !important;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue!important;
+  color: white;
+  padding: 15px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  opacity: 0.9 !important;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
     ul{
    list-style-type: none;
    border-right: 5px dotted black;
@@ -258,13 +402,13 @@ box-shadow: 0 8px 6px -6px black;*/
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height: 360px; "  style="position: absolute; z-index: 1;background-color: white;"> 
     <div class="carousel-inner" style="height: 360px;">
       <div class="carousel-item active">
-        <img class="d-block w-100 img-fluid height: auto; " src="image/slide1.jpg " alt="First slide" style="height: 150%; filter: blur(2px);">
+        <img class="d-block w-100 img-fluid height: auto; " src="slide1.jpg " alt="First slide" style="height: 150%; filter: blur(2px);">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 img-fluid  height: auto;" src="image/slide2.jpg" alt="Second slide" style="height: 100%; filter: blur(2px);">
+        <img class="d-block w-100 img-fluid  height: auto;" src="slide2.jpg" alt="Second slide" style="height: 100%; filter: blur(2px);">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 img-fluid  height: auto;" src="image/slide3.jpg" alt="Third slide" style="height: 100%; filter: blur(2px);">
+        <img class="d-block w-100 img-fluid  height: auto;" src="slide3.jpg" alt="Third slide" style="height: 100%; filter: blur(2px);">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -283,7 +427,7 @@ font-family: 'Girassol', cursive;">What Is Corona virus</h1>
     <div class="row cone" style="margin-top: 3rem;">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xl-6 ">
         
-<img src="image/abc.png" width="300px" height="50px" class="img-fluid">
+<img src="abc.png" width="300px" height="50px" class="img-fluid">
       </div>
       <div class="col-lg-9 col-md-9 col-sm-6 col-xl-6 cot">
        <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
@@ -331,16 +475,84 @@ At this time, there are no specific vaccines or treatments for COVID-19. However
 </div>
 </div>
  --> <div class="bag">
-<?php
-include 'Symptoms.php';
+<div class="container" style="text-align: center; height: 100vh;
+">
+  <h1  style="font-family: 'Roboto', sans-serif;
+font-family: 'Girassol', cursive; ">Symptoms</h1>
 
-?>
+
+<div class="row margino" style=" justify-content:center;align-items: center; display:flex;text-align: center; width: 90%!important;margin-left:2rem;/* border:2px solid red;*/ height: 90vh; margin-top: 7rem;" >
+  <div class="col-sm-12 col-lg-3 col-md-3">
+    <div class="row in">
+     <div class="col-sm-12 col-xl-12 col-lg-9 col-md-9"><img src="fever.png" width="100px" height="100px">
+      </div>
+      <div class="col-sm-12 col-xl-12 col-lg-3 col-md-3"><b>Fever</b></div>
+    </div>
+  </div>
+    <div class="col-sm-12  col-lg-3 col-md-3">
+    <div class="row in ">
+      <div class="col-sm-12 col-xl-12 col-lg-9 col-md-9"><img src="cough.png" width="100px" height="100px"></div>
+      <div class="col-sm-12 col-lg-3 col-xl-12 col-md-3"><b>Cough</b></div>
+    </div>
+  </div>
+    <div class="col-sm-12 col-lg-3 col-md-3">
+    <div class="row in ">
+      <div class="col-sm-12 col-lg-9 col-xl-12 col-md-9"><img src="Weakness.png" width="100px" height="100px"></div>
+      <div class="col-sm-12 col-lg-3 col-xl-12 col-md-3"><b>Weakness</b>
+    </div>
+  </div>
+</div>
+
+  <div class="col-sm-12 col-lg-12 col-md-12">
+    <div class="row in ">
+      <div class="col-sm-12 col-lg-12  col-xl-12 col-md-12"><img src="breath.png" width="100px" height="100px"></div>
+      <div class="col-sm-12 col-lg-12 col-xl-12 col-md-12"><b>Shortness Of breathing(Severe)</b></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+</div><!---End of main dv--->
+
+
+
+
 </div>
 <div class="bagg">
-<?php
-include 'prevention.php';
+<div class="container" style="text-align: center; height: 100vh;">
+  <h1  style="font-family: 'Roboto', sans-serif;
+font-family: 'Girassol', cursive; "> 3 Step Prevention</h1>
 
-?>
+
+<div class="row margino" style="justify-content:center;align-items: center;text-align: center; width: 90%!important;margin-left:2rem;display: flex; /*border:2px solid red;*/ height: 80vh!important;" >
+  <div class="col-sm-12 col-lg-4 col-md-4">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 col-md-6"><img src="medical-mask.png" width="100px" height="100px"></div>
+      <div class="col-sm-12 col-lg-6 col-md-6"><b>Use Mask</b></div>
+    </div>
+  </div>
+    <div class="col-sm-12 col-lg-4 col-md-4">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 col-md-6"><img src="protect-wash-hands.png" width="100px" height="100px"></div>
+      <div class="col-sm-12 col-lg-6 col-md-6"><b>Wash Hands Upto 30 seconds</b></div>
+    </div>
+  </div>
+    <div class="col-sm-12 col-lg-4 col-md-4">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 col-md-6"><img src="distancing.png" width="100px" height="100px"></div>
+      <div class="col-sm-12 col-lg-6 col-md-6"><b>Make Social Distancing</b></div>
+    </div>
+  </div>
+</div><!--Row End-->
+
+</div><!---End of main dv--->
+
+
+
+
 </div>
 <!--New Section--->  
 <section id="health">
@@ -461,8 +673,8 @@ font-family: 'Girassol', cursive; color: white;margin-top: 25px;
     <h1> Contact Me</h1>
    <ul>
        <li style="opacity: 1!important;">Home</li>
-       <li>About Corona</li>
-       <li>About Corona</li>
+       <li>About Me</li>
+       <li>Contact Me</li>
 
      </ul>
   </div>
